@@ -1,8 +1,2095 @@
-<html>
+<!DOCTYPE html>
+<html >
 <head>
-<title>My Profile Page</title>
+  <meta charset="UTF-8">
+  <title>IAmVishalSingh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/sanitize.css/2.0.0/sanitize.min.css'>
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato:300'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="css/topNight.css">
+
+  <style type="text/css">nav .categories-wrapper{background-color:transparent;height:64px}nav .categories-wrapper .categories-container{white-space:nowrap;overflow:auto;transition: background .2s;}nav .categories-wrapper .categories-container.pinned{width:100%;box-shadow:0 2px 4px 0 rgba(0,0,0,0.2);background-color: #fff;}nav .categories-wrapper .categories-container.pinned li > a {color:#444;}nav .categories-wrapper .categories-container .categories>li{float:none;display:inline-block}</style>
+  <link rel="stylesheet" href="css/gallery-materialize.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/pagePreloader.css">
+  
+
+<style>
+body
+{
+  background-color: white !important;
+}
+.skillCard
+{
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+  padding-top:20px; 
+  padding-bottom: 5px; 
+  padding-left:20px; 
+  padding-right:20px;
+}
+
+hr {
+    text-align: center;
+    width: 25rem;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-bottom: 2rem;
+}
+
+.personalDossier {
+  text-align: center;
+  width: 45rem;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-bottom: 2rem;
+}
+
+h2.name {
+    font-size: 50px;
+    font-weight: 300;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    text-shadow: 1px -1px 0 #767676, -1px 2px 1px #7a7a7a, -2px 4px 1px #7e7e7e, -3px 6px 1px #828282, -4px 8px 1px #858585, -5px 10px 1px #898989, -6px 12px 1px #8d8d8d, -7px 14px 1px #919191, -8px 16px 1px #959595, -9px 18px 1px #999999, -10px 20px 1px #9d9d9d, -11px 22px 1px #a1a1a1, -12px 24px 1px #a4a4a4, -13px 26px 1px #a8a8a8, -14px 28px 1px #acacac, -15px 30px 1px #b0b0b0, -16px 32px 1px #b4b4b4, -17px 34px 1px #b8b8b8, -18px 36px 1px #bcbcbc, -19px 38px 1px #bfbfbf, -20px 40px 1px #c3c3c3, -21px 42px 1px #c7c7c7, -22px 44px 1px #cbcbcb, -23px 46px 1px #cfcfcf, -24px 48px 1px lightgrey, -25px 50px 1px #d7d7d7, -26px 52px 1px #dadada, -27px 54px 1px #dedede, -28px 56px 1px #e2e2e2, -29px 58px 1px #e6e6e6, -30px 60px 1px #eaeaea;
+    text-shadow: -1px 1.1px rgba(74, 74, 74, 0.145), -2px 2.2px rgba(79, 79, 79, 0.14), -3px 3.3px rgba(85, 85, 85, 0.135), -4px 4.4px rgba(90, 90, 90, 0.13), -5px 5.5px rgba(96, 96, 96, 0.125), -6px 6.6px rgba(102, 102, 102, 0.12), -7px 7.7px rgba(107, 107, 107, 0.115), -8px 8.8px rgba(113, 113, 113, 0.11), -9px 9.9px rgba(118, 118, 118, 0.105), -10px 11px rgba(124, 124, 124, 0.1), -11px 12.1px rgba(130, 130, 130, 0.095), -12px 13.2px rgba(135, 135, 135, 0.09), -13px 14.3px rgba(141, 141, 141, 0.085), -14px 15.4px rgba(147, 147, 147, 0.08), -15px 16.5px rgba(152, 152, 152, 0.075), -16px 17.6px rgba(158, 158, 158, 0.07), -17px 18.7px rgba(163, 163, 163, 0.065), -18px 19.8px rgba(169, 169, 169, 0.06), -19px 20.9px rgba(175, 175, 175, 0.055), -20px 22px rgba(180, 180, 180, 0.05), -21px 23.1px rgba(186, 186, 186, 0.045), -22px 24.2px rgba(191, 191, 191, 0.04), -23px 25.3px rgba(197, 197, 197, 0.035), -24px 26.4px rgba(203, 203, 203, 0.03), -25px 27.5px rgba(208, 208, 208, 0.025), -26px 28.6px rgba(214, 214, 214, 0.02), -27px 29.7px rgba(219, 219, 219, 0.015), -28px 30.8px rgba(225, 225, 225, 0.01), -29px 31.9px rgba(231, 231, 231, 0.005), -30px 33px rgba(236, 236, 236, 0);
+    /* text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89, -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c, -13px 26px 1px #a3a1a1, -14px 28px 1px #a8a6a6, -15px 30px 1px #adabab, -16px 32px 1px #b2b1b0, -17px 34px 1px #b7b6b5, -18px 36px 1px #bcbbba, -19px 38px 1px #c1bfbf, -20px 40px 1px #c6c4c4, -21px 42px 1px #cbc9c8, -22px 44px 1px #cfcdcd, -23px 46px 1px #d4d2d1, -24px 48px 1px #d8d6d5, -25px 50px 1px #dbdad9, -26px 52px 1px #dfdddc, -27px 54px 1px #e2e0df, -28px 56px 1px #e5e3e2; */
+}
+
+#rocketmeluncur {
+  position: fixed;
+  bottom: 50px;
+  z-index: 7;
+  display: none;
+  visibility: hidden;
+  width: 26px;
+  height: 48px;
+  right: 25px;
+  background: url(https://1.bp.blogspot.com/-UR9I7YEuEUY/VXIJn8MrBPI/AAAAAAAAKRE/qZObHBd5zIo/s1600/rocket.png) no-repeat 50% 0;
+  opacity: 0;
+  -webkit-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -webkit-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  -moz-transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), -moz-transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: visibility .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), opacity .6s cubic-bezier(0.6, 0.04, 0.98, 0.335), transform .6s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+#rocketmeluncur i {
+  display: block;
+  margin-top: 48px;
+  height: 14px;
+  background: url(https://1.bp.blogspot.com/-UR9I7YEuEUY/VXIJn8MrBPI/AAAAAAAAKRE/qZObHBd5zIo/s1600/rocket.png) no-repeat 50% -48px;
+  opacity: .5;
+  -webkit-transition: -webkit-transform .2s;
+  -moz-transition: -moz-transform .2s;
+  transition: transform .2s;
+  -webkit-transform-origin: 50% 0;
+  -moz-transform-origin: 50% 0;
+  transform-origin: 50% 0
+}
+
+#rocketmeluncur:hover {
+  background-position: 50% -62px
+}
+
+#rocketmeluncur:hover i {
+  background-position: 50% 100%;
+  -webkit-animation: flaming .7s infinite;
+  -moz-animation: flaming .7s infinite;
+  animation: flaming .7s infinite
+}
+
+#rocketmeluncur.showrocket {
+  visibility: visible;
+  opacity: 1
+}
+
+#rocketmeluncur.launchrocket {
+  background-position: 50% -62px;
+  opacity: 0;
+  -webkit-transform: translateY(-800px);
+  -moz-transform: translateY(-800px);
+  -ms-transform: translateY(-800px);
+  transform: translateY(-800px);
+  pointer-events: none
+}
+
+#rocketmeluncur.launchrocket i {
+  background-position: 50% 100%;
+  -webkit-transform: scale(1.4, 3.2);
+  -moz-transform: scale(1.4, 3.2);
+  transform: scale(1.4, 3.2)
+}
+
+#contentHEAD {
+  margin-top: 50px;
+  text-align: center;
+}
+
+section.timeline-outer02 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1.header {
+  font-size: 50px;
+  line-height: 70px;
+}
+/* Timeline */
+
+.timeline02 {
+  border-left: 8px solid #42A5F5;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #333;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  padding: 20px ! important;
+  list-style: none;
+  text-align: left;
+}
+
+.timeline02 h1,
+.timeline02 h2,
+.timeline02 h3 {
+  font-size: 1.4em;
+}
+
+.timeline02 .event02 {
+  border-bottom: 1px solid rgba(160, 160, 160, 0.2);
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline02 .event02:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+.timeline02 .event02:before,
+.timeline02 .event02:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline02 .event02:before {
+  left: -177.5px;
+  color: #212121;
+  content: attr(data-date);
+  text-align: right;
+  /*  font-weight: 100;*/
+  
+  font-size: 16px;
+  min-width: 120px;
+}
+
+.timeline02 .event02:after {
+  box-shadow: 0 0 0 8px #42A5F5;
+  left: -30px;
+  background: #212121;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
+/**/
+/*——————————————
+Responsive Stuff
+———————————————*/
+
+@media (max-width: 945px) {
+  .timeline02 .event02::before {
+    left: 0.5px;
+    top: 20px;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .timeline02 h3 {
+    font-size: 16px;
+  }
+  .timeline02 p {
+    padding-top: 20px;
+  }
+  section.lab h3.card-title {
+    padding: 5px;
+    font-size: 16px
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline02 .event02::before {
+    left: 0.5px;
+    top: 20px;
+    min-width: 0;
+    font-size: 13px;
+  }
+  .timeline02 .event02:nth-child(1)::before,
+  .timeline02 .event02:nth-child(3)::before,
+  .timeline02 .event02:nth-child(5)::before {
+    top: 38px;
+  }
+  .timeline02 h3 {
+    font-size: 16px;
+  }
+  .timeline02 p {
+    padding-top: 20px;
+  }
+}
+
+a.portfolio-link {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+/* follow me template */
+.made-with-love {
+  clear: left;
+  text-align: center;
+  font-size: 15px;
+  font-family: arial;
+  color: #fff;
+}
+.made-with-love i {
+  font-style: normal;
+  color: #F50057;
+  font-size: 15px;
+  position: relative;
+  top: 2px;
+}
+.made-with-love a {
+  color: #fff;
+  text-decoration: none;
+}
+.techLogo
+{
+  width: 50px;
+}
+.round-button {
+    width: 100px;
+    height: 100px;
+    padding-bottom: 10%;
+    border-radius: 50%;
+    border: 2px solid #f5f5f5;
+    overflow: hidden;
+    /* background: #464646; */
+    box-shadow: 0 0 3px gray;
+    position: relative !important;
+    /* position: initial !important; */
+    margin-top: -60px;
+    margin-right: 20px;
+}
+.round-button:hover {
+    background: #262626;
+}
+.round-button img {
+    display: block;
+    width: 100%;
+    /* padding: 12%; */
+    height: auto;
+}
+
+.containImg {
+    text-align: center;
+    display: inline-block;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(data:image/gif;base64,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);
+}
+
+.page-footer {
+    background: rgba(73,165,191,1) !important;
+    background: -moz-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%) !important;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,165,191,1)), color-stop(59%, rgba(117,189,209,1)), color-stop(100%, rgba(147,206,222,1))) !important;
+    background: -webkit-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%) !important;
+    background: -o-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%) !important;
+    background: -ms-linear-gradient(top, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%) !important;
+    background: linear-gradient(to bottom, rgba(73,165,191,1) 0%, rgba(117,189,209,1) 59%, rgba(147,206,222,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a5bf', endColorstr='#93cede', GradientType=0 ) !important;
+}
+</style>
 </head>
 <body>
-<h1>This is my Profile page</h1>
-</body>
+
+
+
+
+
+
+
+
+  <div class="main-page page">
+    <section class="main-page-content">
+      <h1>Vishal Singh</h1>
+      <h2># Full-Stack Developer</h2>
+    </section>
+  </div>
+  
+  <div class="about-page page">
+    <section class="about-page-content">
+    </section>
+  </div>
+  
+  
+  <!-- THE UNIVERSE. Code adapted from https://codepen.io/Acuetouag/pen/vOgmza -->
+  
+  <div class="universe">
+    <div class="universe-container">
+      <div class="content">
+        <canvas id="universe"></canvas>
+        <div id="footer">
+          <svg id="scene" x="0px" y="0px" width="140%" style="overflow:hidden;">
+            <path id="ground" d="M0,316.4209c0,0,157.7119-35.416,469-56c7.3833-0.4883,23.7876-3.5488,31.3335-4.0166
+                      c3.7681-0.2334,19.4302,0.9424,28.3335,0.3506c17.1494-1.1396,30.9072-4.2734,38.333-4.6836
+                      c7.5972-0.4189,18.4058,0.3799,27.6665-0.9834c5.7075-0.8408,10.1318-4.042,14.9248-4.2705
+                      c7.8369-0.373,24.5693,3.6084,34.4087,4.2705c11.0586,0.7432,15.2656-1.8135,24.3335-2.1523c10.0576-0.376,20.4629,1.3867,28.6665,0
+                      c3.5957-0.6074,4.4194,0.4209,7.7227-0.7715c1.4927-0.5391,5.8179-3.5693,6.9438-4.2432c3.8335,0.667,6.1426-1.0732,9.917-1.167
+                      c2.2739-0.0566,3.9673-0.9072,6.249-0.9609c2.2725-0.0537,5.5547-1.2383,7.8345-1.2881c2.25-0.0498,3.498,1.0352,5.7554,0.9883
+                      c2.9648-0.0615,7.9341,0.3164,10.9111,0.2607c2.2461-0.042,2.4976-0.5195,4.7505-0.5586c2.9663-0.0518,2.1045-0.5615,5.0825-0.6074
+                      c1.5811-0.0244,6.9976,0.4131,8.582,0.3896c0.8887-0.0127,2.6113,0.373,3.5015,0.3604c1.5527-0.0215,2.2739-0.4404,3.8296-0.4609
+                      c1.416-0.0186,2.0854-0.8555,3.5039-0.873c1.0835-0.0127,2.9155,0.7939,4.0005,0.7813c1.1104-0.0127,3.5542,0.4805,4.666,0.4688
+                      c1.3047-0.0137,1.2773-0.5332,2.584-0.5459c1.415-0.0137,1.165-0.4414,2.5825-0.4541c0.916-0.0078,3.499,0.3984,4.416,0.3906
+                      c1.499-0.0127,1.833,0.6221,3.3345,0.6104c1.3296-0.0098,3.8267-0.666,5.1587-0.6748c1.3335-0.0088,2.8389-0.6514,4.1743-0.6592
+                      c1.3335-0.0078,2.4971,0.6191,3.8325,0.6123c2.5518-0.0127,7.3579,0.3965,9.9175,0.3877c5.3169-0.0176,5.5796-0.4063,10.9297-0.4063
+                      c1.8379,0,6.7031,1.3184,8.3203,1.2402c2.1055-0.1016,3.7139-1.6572,5.5283-1.7969c3.9541-0.3037,7.3262-0.5732,10.5986-0.2598
+                      c6.248,0.5977,12.1973-0.8125,21.207-0.7539c1.7266,0.0107,15.7813,3.085,17.5,3.0977c3.4014,0.0254,6.6191-1.3398,9.9971-1.3066
+                      c4.1221,0.041,8.2275,1.2529,12.3369,1.3066c2.0752,0.0273,4.1543-1.1084,6.2314-1.0771c3.3662,0.0498,4.5547,1.0166,7.9346,1.0771
+                      c2.1104,0.0381,6.4063-0.834,8.5264-0.792c2.7021,0.0537,4.4766-1.6729,7.2002-1.6113c2.9277,0.0654,7.6465,3.1641,10.6074,3.2393
+                      c4.8359,0.123,8.8809-0.9854,13.832-0.8359c2.5029,0.0752,11.8818,2.0498,14.375,2.1289c1.8398,0.0586,2.499-1.2188,4.334-1.1582
+                      c2.1689,0.0713,4.5049,1.209,6.666,1.2832c2.6699,0.0908,4.3398-0.916,6.998-0.8203c3.3379,0.1201,6.0566,1.3193,9.377,1.4453
+                      c4.001,0.1514,4.7764-1.1602,8.75-1c3.1836,0.1289,16.834,1.9912,20,2.125c4.0059,0.1699,4.0029-0.9004,7.9814-0.7227
+                      c6.8594,0.3076,7.9102,1.7656,14.6855,2.0977c8.916,0.4365,23.5254-0.2432,32.293,0.2344
+                      c6.7168,0.3662,13.3896,0.7432,20.0186,1.1318C1458.8545,268.4941,1680,316.4209,1680,316.4209H0z" />
+            <path id="stone1" d="M680.3335,250.7549c7.3335,0.333,13.6665-1.2549,6-6.4609s-14.333-7.1221-18.6665,0.8359
+                      S680.3335,250.7549,680.3335,250.7549z" />
+            <path id="stone2" d="M750.5,243.1709c3.25,0,2.5-3.707-1.75-4.2285s-5,3.7285-3,4.2285S750.5,243.1709,750.5,243.1709z" />
+            <path id="stone3" d="M988.4893,243.8242c2.8857,0.3467,4.8438,1.2627,3.0107-2.0703s-7.3955,1.3555-5.2031,1.7129
+                      S988.4893,243.8242,988.4893,243.8242z" />
+            <path id="stone4" d="M697,248.9355c2.0142-0.2021,2.1665-2.0156,1-2.1816s-9.1543,1.8398-5.9937,2.6699S697,248.9355,697,248.9355z" />
+            <g id="greens" transform="translate(850, 180)">
+              <g>
+                <path d="M36.3877,59.4268C33.0576,18.9482,6.4658,4.522,6.4658,4.522s22.4834,16.1426,24.4414,54.2251
+          C32.8657,96.8311,36.3877,59.4268,36.3877,59.4268z" />
+                <path d="M41.8496,83.1641C31.1572,43.98,2.3711,34.6738,2.3711,34.6738s25.063,11.7471,33.9668,48.8271
+          C45.2441,120.5791,41.8496,83.1641,41.8496,83.1641z" />
+                <path d="M31.3955,60.7207C23.7139,25.7979,2.5381,16.9541,2.5381,16.9541s18.4165,10.9277,24.7925,43.9502
+          C33.7061,93.9258,31.3955,60.7207,31.3955,60.7207z" />
+                <path d="M40.4517,62.0068C47.9473,21.6187,25.4009,0.1914,25.4009,0.1914s18.0098,21.9634,9.7896,59.6357
+          C26.9722,97.499,40.4517,62.0068,40.4517,62.0068z" />
+                <path d="M41.9414,69.4316c13.0313-38.9565-6.3218-63.3062-6.3218-63.3062s14.7856,24.251,1.4141,60.4185
+          C23.6621,102.709,41.9414,69.4316,41.9414,69.4316z" />
+                <path d="M29.4976,87.9092c27.4097-30.5938,19.2993-60.6226,19.2993-60.6226s3.958,28.1255-22.6606,56.0249
+          C-0.4775,111.2109,29.4976,87.9092,29.4976,87.9092z" />
+                <animateTransform attributeName="transform" type="skewX" values="0;10;0" begin="0s" dur="5.5s" fill="freeze" repeatCount="indefinite" />
+                <animateMotion type="translate" values="0,0;-10,0;0,0" begin="0s" dur="5.5s" fill="freeze" repeatCount="indefinite" />
+              </g>
+              <g>
+                <path d="M34.9995,60.4189C56.0713,30.6665,46.1133,5.4014,46.1133,5.4014S52.2559,29.4746,31.6235,56.79
+          C10.9917,84.1035,34.9995,60.4189,34.9995,60.4189z" />
+                <path d="M36.3047,64.5391c28.4629-23.4443,25.3262-51.189,25.3262-51.189s-0.293,25.4971-27.6851,46.6538
+          C6.5552,81.1631,36.3047,64.5391,36.3047,64.5391z" />
+                <path d="M33.0449,70.502c31.4424-19.2637,32.1875-47.1748,32.1875-47.1748s-3.8291,25.208-33.897,42.3584
+          C1.271,82.833,33.0449,70.502,33.0449,70.502z" />
+                <path d="M13.8237,76.0244c36.5039-5.2158,48.2563-30.543,48.2563-30.543S48.5693,67.1045,14.168,70.9248
+          C-20.2324,74.749,13.8237,76.0244,13.8237,76.0244z" />
+                <animateTransform attributeName="transform" type="skewX" values="0;15;0" begin="0s" dur="5s" fill="freeze" repeatCount="indefinite" />
+                <animateMotion type="translate" values="0,0;-15,0;0,0" begin="0s" dur="5s" fill="freeze" repeatCount="indefinite" />
+              </g>
+            </g>
+            <g id="sign" transform="translate(700, 180)">
+              <polygon points="21.2168,1.1143 20.6665,1.5459 19.7593,1.4473 19.229,1.4209 18.9707,1.6274 18.6665,1.9004 17.6865,1.9219
+        37.3516,87.8877 40.8828,87.0791 	" />
+              <polygon points="45.4111,9.5537 2.4258,18.7158 1.563,18.498 1.4585,17.2114 0.8291,15.583 0.9165,14.3364 0.0908,12.6548
+        0.2085,12.0864 -0.1924,11.5308 -0.3296,9.271 43.3408,-0.0376 43.4766,0.5015 43.334,0.9629 43.6533,1.2046 43.8232,1.8784
+        43.8965,2.7754 44.2217,3.459 44.625,5.0576 45.041,7.5459 45.2637,7.5962 45.6191,9.0073 	" />
+              <polygon points="47.0078,20.8545 4.2368,29.5503 3.5933,28.5903 3.3965,26.9746 2.4683,24.5137 2.8398,24.1372 2.2676,23.7847
+        1.9834,22.7563 2.2417,22.3394 1.7388,21.8706 1.2627,20.1426 44.8281,11.2852 45.082,12.4014 45.0723,12.9517 45.3281,13.481
+        45.752,15.3369 46.0273,17.7524 46.4219,18.2803 	" />
+              <polygon points="47.666,31.168 4.7803,39.4023 4.251,37.4004 4.4429,36.1895 3.6465,35.1123 3.0142,32.7178 3.2754,32.1025
+        2.7461,31.7046 2.2676,29.8945 45.9268,21.5107 46.0762,22.2007 45.9512,22.8423 46.2783,23.1372 46.6777,24.9795 46.5234,25.4795
+        47.3027,27.8667 47.8086,30.2017 	" />
+            </g>
+            <g id="boy_1_">
+              <g id="boy">
+                <path d="M800.7324,167.6929c0,0-7.9688-6.5039-9.7197-8.041c-1.751-1.5366-7.9331-6.5039-8.7197-13.0435
+          c-0.7861-6.5396,6.0752-15.188,17.7969-16.1885c11.7207-1.0005,12.9727,1.0366,14.1514,2.7163
+          c1.1787,1.6792,5.7178,11.1494,5.0752,18.6538c-0.6445,7.5049-5.6826,10.1133-9.7559,13.3652
+          C805.4863,168.4072,800.7324,167.6929,800.7324,167.6929z" />
+                <path d="M810.7031,169.2109c-1.0723-1.3037-1.3574-2.9556-1.1426-4.0645c0.2139-1.1084-8.041,0.1128-8.8281,2.542
+          c1.6445,1.6787,0.751,3.146-0.5,4.1108c-1.25,0.9648-1.6797,1.502-1.9297,1.8237c0.0361,0.5361,0,0.9653,0,0.9653
+          s-1.4297,1.7153-2.2871,6.5396s-0.6787,6.79-0.9648,8.3267c-0.2852,1.5366-1.4648,5.9678-1.751,10.292s0,4.5742,0,4.5742
+          s1.251,1.7153,1.1436,4.0742s-1.2705,5.6099-1.2705,5.6099s0.2344,1.8945,1.8779,2.252c1.6445,0.3574,2.3594-0.6436,2.3594-0.6436
+          s1.0713,1.3223,1.75,4.0742c0.6797,2.752,0.6436,6.79,1.8945,7.9688c1.251,1.1797,1.6074,0.3223,1.6074,0.3223
+          s0.4648,3.3975-0.9277,6.6855c-1.3945,3.2881-4.1465,6.7568-4.1465,6.7568h11.0781c0,0,1.5723-3.5234-7.1113-2.2363
+          c3.252-4.0742,3.8955-6.1934,4.0391-11.125c1.8223,0.5,4.252,0.6738,4.9316-0.3271c0.5352,1.3223,2.4297,2.1787,3.3584,1.7139
+          c-0.2139,3.7168-1.0713,12.1846-1.0713,12.1846l9.0049,0.2852c0,0-0.751-3.2168-6.29-1.4307
+          c1.001-6.7891,1.3584-11.5068,1.3584-11.5068s1.3584,0.1074,1.8584-0.3926c0.5-0.501,0.6787-5.3252-0.4648-9.9346
+          c-1.1436-4.6104-0.5-4.4678-0.5-4.4678s1.75-0.8213,1.5-2.8584s-0.8574-3.6807-1.5352-5.5391
+          c0.4639-0.1074,1-0.7861-0.6797-2.7158c-0.2148-2.5015-0.9648-6.3242-0.6436-7.6465s0.2148-2.8232-0.1787-4.3599
+          c0-2.4302,0.7148-13.1509-1.25-17.0103c-1.9658-3.8594-2.5371-3.5737-2.5371-3.5737S812.5977,169.0142,810.7031,169.2109z" />
+              </g>
+              <g transform="translate(783, 122)">
+                <g>
+                  <path d="M35.3506,17.9644c2.9834-3.71,5.9824-15.2095-3.1846-18.3765c2.668,3.833,1.168,5.6665,1.168,5.6665
+      S32,1.2549,28.666-0.4121c1.5,3.1665,0,5,0,5S20.5,8.9209,24.5,13.2544S35.3506,17.9644,35.3506,17.9644z" />
+                  <animateTransform attributeName="transform" type="skewX" values="0;30;0" begin="0s" dur="4s" fill="freeze" repeatCount="indefinite" />
+                  <animateMotion type="translate" values="0,0;-10,0;0,0" begin="0s" dur="4s" fill="freeze" repeatCount="indefinite" />
+                </g>
+                <g>
+                  <path d="M27.125,6.2334c-1.8125-0.625-2.0625-1.9375-4.375-2.25c1,0.8125,1.125,1.6875,1.125,1.6875S21.5,4.3584,19.0625,3.9834
+      c1.3125,0.75,2,1.875,2,1.875s-3.25-0.75-5.875-0.75c1.125,0.3125,1.125,0.6875,1.125,0.6875S10.75,5.8584,8.6875,7.4834
+      c1,0.125,0.9375,0.6714,0.9375,0.6714s-4.25,1.5786-5.375,3.7661c0.875-0.4375-0.8125,1.8125-0.8125,1.8125s0.75,1.375-0.3125,1.125
+      S0.5,14.1084,0.5,12.5459c-0.5,2.1875,0.6924,2.5767,1.4375,3.3125c-0.0625,1-0.9375,2.6494-1.25,2.106s0.8594,0.4282,0.0547,2.4731
+      c-0.8047,2.0459-1.1533,3.7432-0.5103,6.5195s2.7056,4.5264,3.5181,6.2139s0.5-1.6875,0.5-1.6875L27.125,6.2334z" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="wrapper-outer">
+      <div class="loader-wrapper">
+        <div class="loader">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+      <div id="content">
+    
+    
+
+
+<!-- <div style="height: 120%; padding: 90px;">
+  <div class="">
+    <div class="">
+      <div class="">
+
+        <div class="logo">
+             <b>V<span>is</span>ha<span>l</span>&nbsp;<b>Si<span>n</span>g<span>h</span></b></br>
+             <div style="margin-top: -70px;"><b style="font-size:40px;"># Full-Stack Developer</b></div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <section class="animations"> -->
+    <!-- <div class="animations-container">
+      <div class="ani ani-5">
+        <div class="moving-square-frame"></div>
+        <div class="ani-moving-square"></div>
+      </div>
+      <div class="ani ani-6">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 1024">
+          <path id="followPath" d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z"></path>
+          <path id="dashedPath" d="M394.1-214.9c-49.7,89.4,114.4,192.8,175.5,475.1c13,60.1,85.4,424-98.1,552.6 c-95.7,67-267.2,74.5-346.3-22.1c-70.8-86.5-49-233.9,19.2-305.2c102.4-107,353.9-89.1,593.2,96.5c139.6,107,294.1,258.4,415,468.6 c19.2,33.5,36.6,66.6,52.3,99.3c13,8.6,34,19.5,53.3,13.2c148-48.6,165.1-1094.5-338.5-1374.8C723.7-320.8,449-313.8,394.1-214.9z"></path>
+          <path id="airplain" d="M8.04 84L92 48 8.04 12 8 40l60 8-60 8z">
+            <animateMotion xlink:href="#airplain" dur="6s" fill="freeze" repeatCount="indefinite" rotate="auto">
+              <mpath xlink:href="#followPath"></mpath>
+            </animateMotion>
+          </path>
+        </svg>
+      </div>
+    </div> -->
+    <!-- <div class="container">
+        <div class="wrapper-inner">
+            <div class="box-wrapper">
+              <div class="box">
+                <div class="avatar">
+                  <img src="img/mypic.png">
+                </div>
+                <div class="box-inner">
+                  <h3 class="name">Vishal Singh</h3>
+                  <h4 class="occupation">Full Stack Developer</h4>      
+                </div>
+                <p class="location"><i class="fa fa-map-marker"></i>Bhopal, India</p>   
+              </div> -->
+              <!-- <div>
+              <br><br><br>
+                <div class="mouse"></div>
+                <p class="para">Scroll</p>
+              </div> -->
+            <!-- </div>
+          </div>
+    </div>
+  </section> -->
+    
+
+  <!-- <div class="logo"><b>V<span>is</span>ha<span>l</span> Si<span>n</span>g<span>h</span></b></br>
+    <b style="font-size:30px;"><hr>Full Stack Developer</b>
+    
+    </div> -->
+      
+<div class="container">
+<div id="intro"></div>
+     <div class="row">
+          <div class="col s12 m6">
+               <div class="card hoverable" id="personal">
+                    <div class="card-image">
+                         <img src="img/background01.jpg">
+                         <span class="card-title">Personal</span>
+                         
+                         <div class="round-button right" style="position:absolute; float:right !important;">
+                            <a href="#">
+                                <img src="img/mypic2.jpg" alt="Home" />
+                            </a>
+                        </div>
+
+                         
+                    </div>
+                    <div class="card-content">
+                         <h5>Full Stack Developer</h5>
+                         <ul class="fa-ul">
+                              <li><i aria-hidden="true" class="fa-li fa fa-map-marker"></i><a href="https://goo.gl/maps/a4RT2kiGEYU2" target="_blank">Bhopal, Madhya Pradesh</a></li>
+                              <li><i aria-hidden="true" class="fa-li fa fa-comments-o"></i>English, Hindi</li>
+                              <li><i aria-hidden="true" class="fa-li fa fa-code"></i>Php, Laravel, AngularJs, Angular 2, ExpressJs, StrongLoop, NodeJs, HTML, Jade, Ejs, CSS, SCSS, MySQL, CouchDb, PouchDb, MongoDb, JavaScript, Ionic 2, Onsen UI, Angular Material, Materialize, Monaca, cURL, Ajax, Photoshop, Flash</li>
+                         </ul>
+                         <p>I'm a young developer with a passion for quality and an endless stream of crazy ideas. In my spare time I love playing games, listening to music, dreaming up and working on new projects. I am currently work in IISER Bhopal As  Project Lab Associate (Web Developer).</p>
+                    </div>
+                    <div class="card-action center-align">
+                         <a class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Facebook Page Link" href="https://www.facebook.com/vishaloban" target="_blank"><i aria-hidden="true" class="fa fa-facebook-square fa-2x"></i></a>
+                         <a class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="GitHub Repo" href="https://github.com/vishaloban" target="_blank"><i aria-hidden="true" class="fa fa-github-square fa-2x"></i></a>
+                         <a class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Mail to Us" href="mailto:vishalsingh1371990@gmail.com?subject=Hi, Vishal" target="_blank"><i aria-hidden="true" class="fa fa-envelope-o fa-2x"></i></a>
+                    </div>
+               </div>
+          </div>
+          <div class="col s6 m3">
+               <div class="card hoverable principle">
+                    <div class="card-image waves-effect waves-block waves-light">
+                         <img class="activator" src="https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7VG9DQVluOFJ4Tnc/materialdesign_principles_metaphor.png">
+                    </div>
+                    <div class="card-content">
+                         <span class="card-title activator grey-text text-darken-4">Code</span>
+                    </div>
+                    <div class="card-reveal">
+                         <span class="card-title grey-text text-darken-4">Code<i class="material-icons right">close</i></span>
+                         <p>I pride myself in writing code that is as clean, maintainable and understandable as possible.</p>
+                    </div>
+               </div>
+          </div>
+
+          <div class="col s6 m3">
+               <div class="card hoverable principle">
+                    <div class="card-image waves-effect waves-block waves-light">
+                         <img class="activator" src="https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7NndTQW9VZTlZV2s/materialdesign_principles_bold.png">
+                    </div>
+                    <div class="card-content">
+                         <span class="card-title activator grey-text text-darken-4">User</span>
+                    </div>
+                    <div class="card-reveal">
+                         <span class="card-title grey-text text-darken-4">User<i class="material-icons right">close</i></span>
+                         <p>When I work on projects, I focus on the end user. I keep the end user's wants and needs in the back of my head at all times, making for a smooth user experience.</p>
+                    </div>
+               </div>
+          </div>
+          
+          <div class="col s6 m3">
+               <div class="card hoverable principle">
+                    <div class="card-image waves-effect waves-block waves-light">
+                         <img class="activator" src="https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7dkRYelJkeklqWFU/materialdesign_principles_motion.png">
+                    </div>
+                    <div class="card-content">
+                         <span class="card-title activator grey-text text-darken-4">Tools</span>
+                    </div>
+                    <div class="card-reveal">
+                         <span class="card-title grey-text text-darken-4">Tools<i class="material-icons right">close</i></span>
+                         <p>I always used time saver & new tech in my project</p>
+                         <img class="tools tooltipped techLogo" data-position="top" data-delay="50" data-tooltip="AngularJs" src="img/skillsLogo/angular.png">
+                         <img class="tools tooltipped techLogo" data-position="top" data-delay="50" data-tooltip="CouchDb" src="img/skillsLogo/couchdb.png">
+                         <img class="tools tooltipped techLogo" data-position="top" data-delay="50" data-tooltip="Git"  src="img/skillsLogo/git.png">
+                         <img class="tools tooltipped techLogo" data-position="top" data-delay="50" data-tooltip="Ionic" src="img/skillsLogo/ionic.jpg">
+                         <img class="tools tooltipped techLogo" data-position="top" data-delay="50" data-tooltip="Laravel" src="img/skillsLogo/laravel.png">
+                         <img class="tools tooltipped techLogo" data-position="top" data-delay="50" data-tooltip="MongoDb" src="img/skillsLogo/mongo.png">
+                         <img class="tools tooltipped techLogo" data-position="top" data-delay="50" data-tooltip="Node" src="img/skillsLogo/node.jpg">
+                         <img class="tools tooltipped techLogo" data-position="top" data-delay="50" data-tooltip="React" src="img/skillsLogo/react.png">
+                         <img class="tools tooltipped techLogo" data-position="top" data-delay="50" data-tooltip="StrongLoop" src="img/skillsLogo/strongloop.jpg">
+                    </div>
+               </div>
+          </div>
+
+          <div class="col s6 m3">
+               <div class="card hoverable principle">
+                    <div class="card-image waves-effect waves-block waves-light">
+                         <img class="activator" src="https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B6Okdz75tqQsYUJ6a1luU1ZtUWs/whatismaterial_3d_elevation_shadow1.png">
+                    </div>
+                    <div class="card-content">
+                         <span class="card-title activator grey-text text-darken-4">Responsive</span>
+                    </div>
+                    <div class="card-reveal">
+                         <span class="card-title grey-text text-darken-4">Responsive<i class="material-icons right">close</i></span>
+                         <p>I make my projects perfectly accessible on all devices, from the smallest smartphone touchscreen, I have a fervent passion for clear and clean design, and I incorporate that in all of my projects.</p>
+                         <div class="chip" style="margin-top: 10px"><img src="img/skillsLogo/angular.png" alt="Contact Person"> Angular Material</div>
+                         <div class="chip" style="margin-top: 10px"><img src="img/skillsLogo/bootstrap.png" alt="Contact Person"> Bootstrap</div>
+                         <div class="chip" style="margin-top: 10px"><img src="img/skillsLogo/materializecss.png" alt="Contact Person"> Materialize</div>
+                         <div class="chip" style="margin-top: 10px"><img src="img/skillsLogo/ionic.jpg" alt="Contact Person"> Ionic</div>
+                         <div class="chip" style="margin-top: 10px"><img src="img/skillsLogo/monaca.jpg" alt="Contact Person"> Monaca</div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</div>
+
+<div class="parallax-container">
+     <div class="parallax"><img src="http://www.vkbcorp.co.in/wp-content/uploads/2016/06/home-background-6.jpg"></div>
+</div>
+<!-- http://img08.deviantart.net/615d/i/2016/080/f/c/solarized_mountains_by_9beat7-d8rkbit.png  -->
+<div class="container">
+     <h2 class="name">Education</h2>
+     <hr>
+        <section  class="timeline-outer02">
+          <div class="containerHEAD" id="contentHEAD">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <ul class="timeline02 hoverable">
+                <li class="event02" data-date="2011 - 2014">
+                    <h3>M.C.A (Master of Computer Application)</h3>
+                    <p>
+                      I complete my post graduate in Master of Computer Application from Makhanlal Chaturvedi Rashtriya Patrakarita Avam Sanchar Vishwavidyalaya, Bhopal
+                    </p>
+                    <p>
+                      Course Duration: 3-Year (6 semester)
+                    </p>
+                    <p>Since graduating from university, I have also undertaken responsibilities for designing a product for the company. The roles I have been given have provided the perfect opportunity to implement the skills I have gained throughout my higher
+                      education, as well as experiencing the running of a successful business.
+                    </p>
+                  </li>
+                  <li class="event02" data-date="2008 - 2011">
+                    <h3>B.C.A (Bachelor of Computer Application)</h3>
+                    <p>
+                      I done my graduation in Bachelor of Computer Application from Extrol College, Bhopal
+                    </p>
+                    <p>
+                      Course Duration: 3-Year (6 semester)
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <h2 class="name">Experience</h2>
+        <hr>
+        <section  class="timeline-outer02">
+          <div class="containerHEAD" id="contentHEAD">
+            <div class="row">
+              <div class="col s12 m12 l12">
+                <ul class="timeline02 hoverable">
+                  <li class="event02" data-date="2016 - Present">
+                    <h3 class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Open Website"><a href="https://www.iiserb.ac.in" target="_blank">IISER (Indian Institute of Science Education and Research), Bhopal</a></h3>
+                    <p>
+                      I am currently work in <a class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Visit center website" href="http://creates.iiserb.ac.in/index.html" target="_blank">CREATES</a>, IISER Bhopal As Project Lab Associate (Web Developer), My role research on new technologies and used in institue automation project and mobile developement.<a class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Click for visit my profile" href="http://creates.iiserb.ac.in/people.html" target="_blank">Visit My Profile</a>
+                    </p>
+                     <h7><u>About CREATES</u></h7>
+                    <p>
+                      Centre for Research in Advanced Technology for Education in Science (CREATES) is a Teaching Learning Centre (TLC) established by IISER Bhopal under PMMMNMTT scheme of Ministry of Human Resource and Development (MHRD).
+                    </p>
+                    <p>
+                      Primary vision of the center is to develop new core technologies to aid in teaching and learning, to create new knowledge resources, to develop new technology-based pedagogies, and to develop a sustainable platform for creating, sharing and delivering knowledge. <a class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Visit center website" href="http://creates.iiserb.ac.in/index.html" target="_blank">Read more about Creates Center</a>
+                    </p>
+                    <h7><u>About IISER</u></h7>
+                    <p>
+                      IISERs were created through a proclamation of Ministry of Human Resource Development, Government of India, to promote quality education and research in science and related areas. <a href="https://www.iiserb.ac.in" target="_blank">Read more about IISER</a>
+                    </p>  
+                  </li>
+                  <li class="event02" data-date="2015 - 2016">
+                    <h3 class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Open Website"><a href="http://www.psscive.ac.in" target="_blank">PSSCIVE <small>(Pandit Sundarlal Sharma Central Institute of Vocational Education)</small>, Bhopal</a></h3>
+                    <p>
+                      My role was Develope & maintain server the institue website.
+                    </p>
+                    <h7><u>About PSSCIVE</u></h7>
+                    <p>
+                      The Pandit Sundarlal Sharma Central Institute of Vocational Education (PSSCIVE) is an apex research and development organization in the field of vocational education. It is a constitute unit of National Council of Education Research and Training(NCERT), established by the Ministry of Human Resource Development (MHRD), Government of India in 1993 at Bhopal. It is a UNEVOC (International Project on Technical and Vocational Education) Center in India. <a class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Open Website" href="http://www.psscive.ac.in" target="_blank">Read more about PSSCIVE</a>
+                    </p>
+                  </li>
+                  <li class="event02" data-date="2015 - 2015">
+                    <h3 class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Open Website"><a href="http://www.eulogik.com/" target="_blank">Eulogik</a></h3>
+                    <p>
+                      Worked with the technology team on innovation designing & web development / mobile development. All new tech, I learn here like Nodejs, Angular, Ionic, Laravel, Mongodb, Strongloop etc.
+                    </p>
+                    <h7><u>About Eulogik</u></h7>
+                    <p>Core focus areas of Eulogik are new edge web & mobile applications. We are working with the latest technologies in the world of Web & Mobile. We focus on creating rich applications for a range of customers. We love technologies like HTML5, CSS3, Laravel, Javascript, Ajax, Web Services, JSON, PHP-MySQL, Bootstrap, Material Design frameworks, Ionic framework, Apache Cordova and many more. <a class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Open Website" href="http://www.eulogik.com" target="_blank">Read more about eulogik</a></p>
+                  </li>
+                  <li class="event02" data-date="2013 - 2015">
+                    <h3 class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Open Website"><a href="http://www.perfectsoftwareservices.com/" target="_blank">Perfect Software Services</a></h3>
+                    <p>
+                      My first employer company, I learn basic step of Development process, Client  interation, Design database structure in this company, all implement in live project. 
+                    </p>
+                    <h7><u>About Perfect Software Services</u></h7>
+                    <p>
+                      We are one of the best in the field of website designing, website development, online marketing and software development. We are located in Gurgaon, India. <a class="tools tooltipped" data-position="top" data-delay="50" data-tooltip="Open Website" href="http://www.perfectsoftwareservices.com" target="_blank">Read more about PSS</a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+</div>
+
+<div class="parallax-container">
+    <div class="parallax"><img src="http://www.carlkleiner.com/wp-content/uploads/2015/05/carl-kleiner-stadium-sneaker-lab-detail-81-1920x919.jpg"></div>
+</div>
+
+<div class="container">
+ <h2 class="name">Abilities</h2>
+ <hr>
+ <div class="row">
+    <div class="col s6"><span class="flow-text">SSS (Server Side Scripting Language)</span></div>
+ </div>
+ <div class="row">
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/node.jpg">
+        <p style="padding: 12px;"><a href="#">NodeJs</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/express.png">
+        <p style="padding: 12px;"><a href="#">ExpressJs</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/strongloop.jpg">
+        <p style="padding: 12px;"><a href="#">StrongLoop</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/wordpress.png">
+        <p style="padding: 12px;"><a href="#">Wordpress</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/php.png">
+        <p style="padding: 12px;"><a href="#">PHP</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/laravel.png">
+        <p style="padding: 12px;"><a href="#">Laravel</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6"><span class="flow-text">Mobile Framworks</span></div>
+  </div>
+  <div class="row">
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/react2.png">
+        <p style="padding: 12px;"><a href="#">ReactNative</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/cordova.png">
+        <p style="padding: 12px;"><a href="#">Cordova</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/monaca.jpg">
+        <p style="padding: 12px;"><a href="#">Monaca</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/ionic.jpg">
+        <p style="padding: 12px;"><a href="#">Ionic 1 & 2</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/expo.png">
+        <p style="padding: 12px;"><a href="#">Expo</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6"><span class="flow-text">Design Skills</span></div>
+  </div>
+  <div class="row">
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/bootstrap.png">
+        <p style="padding: 12px;"><a href="#">Bootstrap</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/materializecss.png">
+        <p style="padding: 12px;"><a href="#">Materialize</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/angularM.jpg">
+        <p style="padding: 12px;"><a href="#">Angular Material</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/monaca.jpg">
+        <p style="padding: 12px;"><a href="#">Monaca</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/ionic.jpg">
+        <p style="padding: 12px;"><a href="#">Ionic</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6"><span class="flow-text">DBMS</span></div>
+  </div>
+  <div class="row">
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/couchdb.png">
+        <p style="padding: 12px;"><a href="#">Couch DB</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/mongo.png">
+        <p style="padding: 12px;"><a href="#">Mongo DB</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/mysql.jpg">
+        <p style="padding: 12px;"><a href="#">MySQL</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/sqlite.png">
+        <p style="padding: 12px;"><a href="#">SQLite</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/firebase.jpg">
+        <p style="padding: 12px;"><a href="#">Firebase</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6"><span class="flow-text">CSS (Client Side Scripting Language)</span></div>
+  </div>
+  <div class="row">
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/angular.png">
+        <p style="padding: 12px;"><a href="#">AngularJs 1 & 2</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/js.png">
+        <p style="padding: 12px;"><a href="#">JavaScript</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/typescript.png">
+        <p style="padding: 12px;"><a href="#">TypeScript</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/jquery.gif">
+        <p style="padding: 12px;"><a href="#">Jquery</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/ajax.png">
+        <p style="padding: 12px;"><a href="#">Ajax</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/html.png">
+        <p style="padding: 12px;"><a href="#">HTML5</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+        <div class="card hoverable">
+          <img class="skillCard" src="img/skillsLogo/css.png">
+          <p style="padding: 12px;"><a href="#">CSS3</a></p>
+        </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/sass.png">
+        <p style="padding: 12px;"><a href="#">Sass</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col s6"><span class="flow-text">Template Engine</span></div>
+    </div>
+    <div class="row">
+      <div class="col m2">
+        <div class="card hoverable">
+          <img class="skillCard" src="img/skillsLogo/ejs.png">
+          <p style="padding: 12px;"><a href="#">Ejs</a></p>
+        </div>
+      </div>
+      <div class="col m2">
+        <div class="card hoverable">
+          <img class="skillCard" src="img/skillsLogo/pug.svg">
+          <p style="padding: 12px;"><a href="#">Jade / Pug</a></p>
+        </div>
+      </div>
+      <div class="col m2">
+        <div class="card hoverable">
+          <img class="skillCard" src="img/skillsLogo/ect.png">
+          <p style="padding: 12px;"><a href="#">Etc</a></p>
+        </div>
+      </div>
+      <div class="col m2">
+        <div class="card hoverable">
+          <img class="skillCard" src="img/skillsLogo/blade.png">
+          <p style="padding: 12px;"><a href="#">Blade</a></p>
+        </div>
+      </div>
+    </div>
+
+  
+  <div class="row">
+    <div class="col s6"><span class="flow-text">Web Server</span></div>
+  </div>
+  <div class="row">
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/nginx.png">
+        <p style="padding: 12px;"><a href="#">Nginx</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/apache.png">
+        <p style="padding: 12px;"><a href="#">Apache</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/mamp.png">
+        <p style="padding: 12px;"><a href="#">Mamp</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/xammp.png">
+        <p style="padding: 12px;"><a href="#">Xammp</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/wamp.png">
+        <p style="padding: 12px;"><a href="#">Wamp</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/iis.png">
+        <p style="padding: 12px;"><a href="#">IIS</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6"><span class="flow-text">Package Manager</span></div>
+  </div>
+  <div class="row">
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/npm.png">
+        <p style="padding: 12px;"><a href="#">Npm</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/composer.png">
+        <p style="padding: 12px;"><a href="#">Composer</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/homebrew.png">
+        <p style="padding: 12px;"><a href="#">HomeBreq</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6"><span class="flow-text">Tools</span></div>
+  </div>
+  <div class="row">
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/atom.png">
+        <p style="padding: 12px;"><a href="#">Atom</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/code.png">
+        <p style="padding: 12px;"><a href="#">Code</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/sublime.jpg">
+        <p style="padding: 12px;"><a href="#">Sublime</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/git 2.png">
+        <p style="padding: 12px;"><a href="#">Git</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/xml.png">
+        <p style="padding: 12px;"><a href="#">XMl</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/json.png">
+        <p style="padding: 12px;"><a href="#">JSON</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/bson.png">
+        <p style="padding: 12px;"><a href="#">BSON</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/dream.png">
+        <p style="padding: 12px;"><a href="#">Dreamweaver</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/ps.png">
+        <p style="padding: 12px;"><a href="#">Photoshop</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/flash.png">
+        <p style="padding: 12px;"><a href="#">Flash</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s6"><span class="flow-text">OS</span></div>
+  </div>
+  <div class="row">
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/mac.png">
+        <p style="padding: 12px;"><a href="#">Mac</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/linux.png">
+        <p style="padding: 12px;"><a href="#">Linux</a></p>
+      </div>
+    </div>
+    <div class="col m2">
+      <div class="card hoverable">
+        <img class="skillCard" src="img/skillsLogo/windows.png">
+        <p style="padding: 12px;"><a href="#">Windows</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="parallax-container">
+     <div class="parallax"><img src="http://www.carlkleiner.com/wp-content/uploads/2015/05/carl-kleiner-stadium-sneaker-lab-detail-81-1920x919.jpg"></div>
+</div>
+<div class="container">
+  <h2 class="name">Personal Dossier</h2>
+  <hr class="personalDossier">
+  <div class="row">
+    <div class="col s12 m12">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header"><i aria-hidden="true" class="fa fa-male"></i>Father's Name <span class="badge">Mr. P.C.S Sisodia</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i aria-hidden="true" class="fa fa-birthday-cake"></i>Date of Birth <span class="badge">13 JULY, 1990</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i aria-hidden="true" class="fa fa-globe"></i>Nationality <span class="badge">Indian</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i aria-hidden="true" class="fa fa-user-times"></i>Marital Status <span class="badge">Single</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i aria-hidden="true" class="fa fa-envelope-o"></i>E-Mail <span class="badge">vishalsingh1371990@gmail.com</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i aria-hidden="true" class="fa fa-mobile"></i>Alternate Mobile No. <span class="badge">9977296229</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i aria-hidden="true" class="fa fa-language"></i>Language Known <span class="badge">English, Hindi</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i aria-hidden="true" class="fa fa-gamepad"></i>Hobbies <span class="badge">Listening Music, Bandminton, Travelling</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i aria-hidden="true" class="fa fa-map-marker"></i>Address <span class="badge"> MIG-45, Sumitra Parisar, Nayapura, Kolar Road, Bhopal (M.P)</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header center"><a class="waves-light btn center" download href="/resume/vishalsingh_resume.pdf"><i class="material-icons left">file_download</i>Download Resume</a></div>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+<p class="center-align">I do hereby declare that the above written particulars are true to the best of my knowledge and belief.</p>
+<p class="center-align"><img style="width:10%;" src="img/vishalSign.png"></p>
+<p class="center-align">[Vishal Singh Sisodia]</p>
+acromed.in
+runner game
+got salon
+myWebsite
+
+<div class="parallax-container">
+  <div class="parallax"><img src="img/parallaxImg/project.png"></div>
+</div>
+
+<div class="container">
+  <h2 class="name">Projects</h2>
+  <hr>
+  <div class="row">
+
+    <!-- Navbar and Header -->
+    <nav class="nav-extended nav-full-header z-depth-0 blue-grey darken-3">
+     <div class="categories-wrapper">
+        <div class="categories-container" style="padding-left: 26%; top: 0px; left: 0px; width: 100%;">
+          <ul class="categories db">
+            <li class="k"><a href="#all">All</a></li>
+            <li><a href="#website">Website</a></li>
+            <li><a href="#app">App</a></li>
+            <li><a href="#other">Other</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Gallery -->
+    <div id="portfolio" class="cx gray">
+      <div class="db">
+        <div class="b e">
+          
+          <!-- Academic Affaires Website -->
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                  <img class="responsive-img containImg" src="img/projectsImg/acadAffairs/acadAffairsimg1.png" alt="placeholder" >
+              </a>
+              <div class="gallery-header">
+                <span># Academic Affairs Portal</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># Academic Affairs Portal</h4>
+                  <div class="chip"><img src="img/skillsLogo/bootstrap.png" alt="Contact Person"> Bootstrap</div>
+                  <div class="chip"><img src="img/skillsLogo/node.jpg" alt="Contact Person"> Nodejs</div>
+                  <div class="chip"><img src="img/skillsLogo/couchdb.png" alt="Contact Person"> CouchDb</div>
+                  <div class="chip"><img src="img/skillsLogo/angular.png" alt="Contact Person"> AngularJs</div>
+                  <div class="chip"><img src="img/skillsLogo/Kibana.png" alt="Contact Person"> Kibana</div>
+                  <div class="chip"><img src="img/skillsLogo/elastic.png" alt="Contact Person"> Elastic</div>
+                </div>
+                <br>
+                <p class="fi">Literally venmo before they sold out.</p>
+                <p class="fi">Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. Drinking vinegar marfa you probably haven't heard of them consequat post-ironic, shabby chic williamsburg raclette vaporware readymade selfies brunch. Venmo selvage biodiesel marfa.</p>
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Login Page"><img class="containImg" src="img/projectsImg/acadAffairs/acadAffairsimg1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Forgot Password Page"><img class="containImg" src="img/projectsImg/acadAffairs/acadAffairsimg3.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Academic Admin Profile Page"><img class="containImg" src="img/projectsImg/acadAffairs/acadAffairsimg2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Academic Admin Student Page (Perform Curd Operation)"><img class="containImg" src="img/projectsImg/acadAffairs/acadAffairsimg4.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Academic Admin Course by registration Page"><img class="containImg" src="img/projectsImg/acadAffairs/acadAffairsimg5.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Academic Admin Student Profile Page"><img class="containImg" src="img/projectsImg/acadAffairs/acadAffairsimg6.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Academic Admin Offered Course Page"><img class="containImg" src="img/projectsImg/acadAffairs/acadAffairsimg7.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="https://shiksha.iiserb.ac.in/login/" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Creates Website -->
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="responsive-img containImg" src="img/projectsImg/createsCenter/createsCenter1.png" alt="placeholder" >
+              </a>
+              <div class="gallery-header">
+                <span># Creates Center</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># Creates Center</h4>
+                  <div class="chip"><img src="img/skillsLogo/bootstrap.png" alt="Contact Person"> Bootstrap</div>
+                </div>
+                <br>
+                <br>
+                <h5><b>Centre for Research in Advanced Technology for Education in Science (CREATES)</b></h5>
+                <p>Centre for Research in Advanced Technology for Education in Science (CREATES) is a Teaching Learning Centre (TLC) established by IISER Bhopal under PMMMNMTT scheme of Ministry of Human Resource and Development (MHRD).</p>
+                <p>Primary vision of the center is to develop new core technologies to aid in teaching and learning, to create new knowledge resources, to develop new technology-based pedagogies, and to develop a sustainable platform for creating, sharing and delivering knowledge</p>
+                <p>The center’s developmental activities employ various pedagogies including immersive learning, collaborative and constructive learning, adaptive teaching and proactive teaching, with the aim of implementing these methodologies through the use of technology. Several new technological innovations are being undertaken by a diverse team of faculty members from various departments, which include development of a dynamic science and math-rich content acquisition platform, development of technology-enabled studio classroom for adaptive, immersive and reactive learning, and a technology-based assessment engine. Since its inception and subsequent approval in December 2015, CREATES has made significant progress in the aforementioned project. The center also promotes innovation in education technology through collaboration with IISER Bhopal community by creating necessary infrastructural resources for educationists and enthusiasts.</p>
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/createsCenter/createsCenter1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Project Page"><img class="containImg" src="img/projectsImg/createsCenter/createsCenter2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Team Member Page"><img class="containImg" src="img/projectsImg/createsCenter/createsCenter3.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/createsCenter/createsCenter4.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://creates.iiserb.ac.in/" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+         
+          <!-- basicESQ Website -->
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="containImg" src="img/projectsImg/basicESQ/basicesq01.png" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span># Basic ESQ</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># Basic ESQ</h4>
+                  <div class="chip"><img src="img/skillsLogo/angular.png" alt="Contact Person"> AngularJs</div>
+                  <div class="chip"><img src="img/skillsLogo/materializecss.png" alt="Contact Person"> Materialise</div>
+                  <div class="chip"><img src="img/skillsLogo/strongloop.jpg" alt="Contact Person"> StrongLoop</div>
+                  <div class="chip"><img src="img/skillsLogo/braintree.png" alt="Contact Person"> Braintree</div>
+                  <div class="chip"><img src="img/skillsLogo/aws.png" alt="Contact Person"> AWS</div>
+                </div>
+                <br>
+                <br>
+                <p class="fi">BASIC ESQ was designed by two solo attorneys out of New York. Garry (co-founder) is a NYC litigator who built a solo practice from the ground up. Adam (co-founder) began his legal career as a corporate lawyer. The pair partnered up and created a litigation boutique in New York. As solos and small firm managers we realized we needed an affordable, basic, and intuitive law practice management system. We designed BASIC ESQ using our experience and knowledge of what solos and small firms need to streamline their practice. BASIC ESQ is SaaS cloud application developed with Material Design principals to deliver an intuitive law practice management experience. Our responsive application allows you to access your account from any device, including your tablet or smartphone. BASIC ESQ was built by practicing attorneys. Our application was developed with the needs of solo and small firm attorneys in mind. BASIC ESQ’s simplified system includes only the features that you really need to make your practice a success! We continue to use BASIC ESQ every day in our law practice! Join us! TRY BASIC ESQ FOR FREE TODAY!</p>
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/basicESQ/basicesq1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Project Page"><img class="containImg" src="img/projectsImg/basicESQ/basicesq2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Team Member Page"><img class="containImg" src="img/projectsImg/basicESQ/basicesq3.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/basicESQ/basicesq4.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://basicesq.com/" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- matrimonymart Website --> 
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="containImg" src="img/projectsImg/matrimonymart/matrimonymart00.png" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span># Matrimony Mart</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># Matrimony Mart</h4>
+                  <div class="chip"><img src="img/skillsLogo/php.png" alt="Contact Person"> Php</div>
+                  <div class="chip"><img src="img/skillsLogo/mysql.jpg" alt="Contact Person"> Mysql</div>
+                  <div class="chip"><img src="img/skillsLogo/js.png" alt="Contact Person"> Js</div>
+                  <div class="chip"><img src="img/skillsLogo/html.png" alt="Contact Person"> Html</div>
+                  <div class="chip"><img src="img/skillsLogo/css.jpg" alt="Contact Person"> Css</div>
+                  <div class="chip"><img src="img/skillsLogo/google.png" alt="Contact Person"> Google Api</div>
+                </div>
+                <br>
+                <br>
+                <p class="fi">www.matrimonymart.com is an internet enabled electronic platform that facilitates communication for the purposes of advertising and distributing information pertaining to goods and or services, have been posted, listed or provided information on www.matrimonymart.com.</p>
+                <p class="fi">While interacting with users on www.matrimonymart.com, with respect to any listing, posting or information we strongly encourage you to exercise reasonable diligence as you would in traditional off line channels and practice judgment and common sense before committing to or complete intended sale, purchase of any goods or services or exchange of information.</p>
+                <p class="fi">While making use of www.matrimonymart.com classifieds and other services such as the discussion forums, comments and feedback and other services, you will post in the appropriate category or area and you agree that your use of the Site shall be strictly governed by this Acceptable Use Policy including the policy for listing of your Classified which shall not violate the prohibited and restricted items policy (herein after referred to as the Listing Policy.) (Listing Policy) The listing policy shall be read as part of this Acceptable Use Policy and is incorporated in this Acceptable Use Policy by way of reference.</p>
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/matrimonymart/matrimonymart1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Products listing Page"><img class="containImg" src="img/projectsImg/matrimonymart/matrimonymart2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Product Info Page"><img class="containImg" src="img/projectsImg/matrimonymart/matrimonymart3.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Product Gallery Page"><img class="containImg" src="img/projectsImg/matrimonymart/matrimonymart4.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact to Vendor Page"><img class="containImg" src="img/projectsImg/matrimonymart/matrimonymart5.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Vendor location"><img class="containImg" src="img/projectsImg/matrimonymart/matrimonymart6.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Post Your Ad Page"><img class="containImg" src="img/projectsImg/matrimonymart/matrimonymart7.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/matrimonymart/matrimonymart8.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Terms & Privacy Page"><img class="containImg" src="img/projectsImg/matrimonymart/matrimonymart9.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://www.matrimonymart.com" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- stayfit solutions Website --> 
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="containImg" src="img/projectsImg/stayfit/stayfit1.png" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span># Stayfit solutions</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># Stayfit solutions</h4>
+                  <div class="chip"><img src="img/skillsLogo/php.png" alt="Contact Person"> Php</div>
+                  <div class="chip"><img src="img/skillsLogo/mysql.jpg" alt="Contact Person"> Mysql</div>
+                  <div class="chip"><img src="img/skillsLogo/js.png" alt="Contact Person"> Js</div>
+                  <div class="chip"><img src="img/skillsLogo/bootstrap.png" alt="Contact Person"> Bootstrap</div>
+                  <div class="chip"><img src="img/skillsLogo/css.jpg" alt="Contact Person"> Css</div>
+                  <div class="chip"><img src="img/skillsLogo/social.png" alt="Contact Person"> Social Api</div>
+                </div>
+                <br>
+                <br>
+                <h5>Intro</h5>
+                <p class="fi">Our newly opened Fitness studio at Sohna Road is a dream come true for every fitness lover. It boasts of a safe, hygienic studio set in a fitness inspiring ambience. Whether you are a corporate professional hard pressed for time, a multi-tasking, a busy business owner or a student we have an innovative, customized fitness solution for you.</p>
+                <p class="fi">The fitness studio with a difference promises to banish the boredom that a routine exercise schedule brings along. Here you will experience different exercise forms, group classes, individual sessions and the most modern, just arrived equipments. You pay nothing extra for having a personal fitness guide!!!.</p>
+                <p class="fi">Stayfit Solutions is your one stop destination for complete fitness solutions be it weight loss, weight gain or achieving higher fitness levels. We are a leading fitness house providing services to clients across Gurgaon, Faridabad and Delhi. At the forefront of the fitness wave in this urban setting for the last 5 years, we endeavor to provide holistic packages that aim to introduce you to a world of health and zero disease. Visit the packages section one that suits you.</p>
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/stayfit/stayfit1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Profile Page"><img class="containImg" src="img/projectsImg/stayfit/stayfit2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="360 Value Creation Page"><img class="containImg" src="img/projectsImg/stayfit/stayfit3.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Career Page"><img class="containImg" src="img/projectsImg/stayfit/stayfit4.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/stayfit/stayfit5.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://www.perfectsoftwareservices.com/demo/websites/stayfitsolutions/index.php" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- grewalssb Website --> 
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="containImg" src="img/projectsImg/grewalssb/grewalssb1.png" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span># GREWAL SSB ACADEMY</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># GREWAL SSB ACADEMY</h4>
+                  <div class="chip"><img src="img/skillsLogo/php.png" alt="Contact Person"> Php</div>
+                  <div class="chip"><img src="img/skillsLogo/mysql.jpg" alt="Contact Person"> Mysql</div>
+                  <div class="chip"><img src="img/skillsLogo/js.png" alt="Contact Person"> Js</div>
+                  <div class="chip"><img src="img/skillsLogo/html.png" alt="Contact Person"> Html</div>
+                  <div class="chip"><img src="img/skillsLogo/css.jpg" alt="Contact Person"> Css</div>
+                  <div class="chip"><img src="img/skillsLogo/social.png" alt="Contact Person"> Social Api</div>
+                </div>
+                <br>
+                <br>
+                <h5>Intro</h5>
+                <p class="fi">The Founder of this Academy General (Dr) Ranjit Singh has a deep passion for sports, yoga and adventure activities.</p> <p class="fi">A gold medalist in 1500 mtrs race in Kurukshetra University, he was awarded the coveted Principal's Gold Medal in Adventure Course at HMI, Darjeeling in 1974. Not only a services Lawn Tennis player, he is also a keen trekker, swimmer, golfer and cross country Blue at IMA.</p> 
+                <p class="fi">He was the team manager of the Indian Ice Hockey team which went to Japan in July 2002.</p>
+                <p class="fi">He was the Chief Instructor and Principal of Autonomous College at AEC Trg College and Centre.</p>
+                <p class="fi"> As OSD (Def) in KV Sangathan he brought in phenomenal changes and even introduced adventure activities not only in Defence Sector located KVs but also in all the KVs.</p>
+                <p class="fi"> He has also been offg Principal & Head-Master of Sainik School, Imphal, Principal of Military School, Dholpur and UP Sainik School, Lucknow, where his goal oriented training of students for SSB produced outstanding results.</p>
+
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/grewalssb/grewalssb1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Profile Page"><img class="containImg" src="img/projectsImg/grewalssb/grewalssb2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="360 Value Creation Page"><img class="containImg" src="img/projectsImg/grewalssb/grewalssb3.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Career Page"><img class="containImg" src="img/projectsImg/grewalssb/grewalssb4.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/grewalssb/grewalssb5.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/grewalssb/grewalssb6.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/grewalssb/grewalssb7.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/grewalssb/grewalssb8.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://www.grewalssbacademy.com/index.html" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- cofounder Website --> 
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="containImg" src="img/projectsImg/cofounder/cofounder1.png" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span># Co-founder Synergy</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># Co-founder Synergy</h4>
+                  <div class="chip"><img src="img/skillsLogo/php.png" alt="Contact Person"> Php</div>
+                  <div class="chip"><img src="img/skillsLogo/mysql.jpg" alt="Contact Person"> Mysql</div>
+                  <div class="chip"><img src="img/skillsLogo/js.png" alt="Contact Person"> Js</div>
+                  <div class="chip"><img src="img/skillsLogo/html.png" alt="Contact Person"> Html</div>
+                  <div class="chip"><img src="img/skillsLogo/css.jpg" alt="Contact Person"> Css</div>
+                  <div class="chip"><img src="img/skillsLogo/social.png" alt="Contact Person"> Social Api</div>
+                </div>
+                <br>
+                <br>
+                <h5>Intro</h5>
+                <p class="fi">Co-founder Synergy is not just a company. It is a lifestyle. The central theme of our culture is knowledge, innovation and creativity, courage and entrepreneurship.</p>
+                <p class="fi">We get real satisfaction when we see your ideas coming to fruition. We already have strong networking with social entrepreneurs worldwide who are at the idea stage or start-up stage and we are doing match making of core team, co-founders for expansion of their start-ups in emerging economies.</p>
+                <p class="fi">Finally we thought to take up work which surrounds not only to the idea of making a living but to the idea of making a life.</p>
+                <h5>Vision</h5>
+                <p class="fi">Our vision is to create a heaven for aspiring entrepreneurs and start-ups so that every entrepreneurial dream can be nurtured in our eco-system and we can help India achieve a status of 'Start-up Country'.</p>
+                <h5>Mission</h5>
+                <p class="fi">Our mission is to make our vision a reality by researching world class entrepreneurial start-up support practices and implementing for the absolute benefit of founders and aspiring entrepreneurs and working as idea stage accelerator by providing entrepreneurship trainings and advisory services and searching co-founders for start-ups and making fitment for their venture, helping fund raising through seed capital, private equity, venture capital and debt financing etc.</p>
+                <h5>Concept</h5>
+                <p class="fi">A co-founder means a joint-founder. A co-founder is a full-fledged business partner who is risk taker, having entrepreneurial capabilities and is responsible for designated functions in the company as decided by all co-founders together. For example, one co-founder takes care of marketing function and another takes care of finance, admin and operations and both together are involved in strategy and business planning.</p>
+                <p class="fi">Synergy is the interaction of multiple elements in a system to produce an effect different from or greater than the sum of their individual effects. The term synergy comes from the Greek word synergia meaning "working together".</p>
+                <p class="fi">So, the word Co-founder Synergy perfectly describes the importance of working as a team where team members from different acumen and training meet to set up a business with common goal of making any product or providing any service with or without profit motives.</p>
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Profile Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="360 Value Creation Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder3.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Career Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder4.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder5.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="User Login Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder6.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="User Registration Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder7.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="User Home Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder8.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="User Profile Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder9.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="User Password Change Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder10.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="NEWS Tag Page"><img class="containImg" src="img/projectsImg/cofounder/cofounder11.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://www.cofoundersynergy.com" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Uno app --> 
+          <div class="d hx hf gu gallery-item gallery-expand ce app">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="containImg" src="img/projectsImg/app_uno/uno1.png" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span># Uno App</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># Uno App</h4>
+                  <div class="chip"><img src="img/skillsLogo/ionic.jpg" alt="Contact Person"> Ionic 1</div>
+                  <div class="chip"><img src="img/skillsLogo/angular.png" alt="Contact Person"> Angule</div>
+                  <div class="chip"><img src="img/skillsLogo/css.png" alt="Contact Person"> Css</div>
+                  <div class="chip"><img src="img/skillsLogo/js.png" alt="Contact Person"> Js</div>
+                  <div class="chip"><img src="img/skillsLogo/strongloop.jpg" alt="Contact Person"> StrongLoop</div>
+                </div>
+                <br>
+                <br>
+                <h5>Intro</h5>
+                <p class="fi">Uno is s simple and smart way of messaging. Uno simple to used, chat with single word.</p>
+                <h5># features</h5>
+                <p class="fi">Chat with single word.</p>
+                <p class="fi">Find friends location.</p>
+                <p class="fi">See your friends profile.</p>
+                <p class="fi">Invite & connect with friends.</p>
+                <p class="fi">light weigth & faster.</p>
+                <p class="fi">Cheack last message status.</p>
+                <p class="fi">User profile pic.</p>
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Single word. Easy messageing"><img class="containImg" src="img/projectsImg/app_uno/uno1.jpg"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Invite & connect with friends"><img class="containImg" src="img/projectsImg/app_uno/uno2.jpg"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="See your friend's profile"><img class="containImg" src="img/projectsImg/app_uno/uno3.jpg"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Check your last messages"><img class="containImg" src="img/projectsImg/app_uno/uno4.jpg"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Type simple & Chat simple"><img class="containImg" src="img/projectsImg/app_uno/uno5.jpg"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://www.eulogik.com/portfolio/uno-app/" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit App Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Kushal Multi Developers Website --> 
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="containImg" src="img/projectsImg/kushal/kushal1.png" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span># Kushal Multi-Developers</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># Kushal Multi Developers</h4>
+                  <div class="chip"><img src="img/skillsLogo/php.png" alt="Contact Person"> Php</div>
+                  <div class="chip"><img src="img/skillsLogo/bootstrap.png" alt="Contact Person"> Bootstrap</div>
+                  <div class="chip"><img src="img/skillsLogo/js.png" alt="Contact Person"> Js</div>
+                  <div class="chip"><img src="img/skillsLogo/html.png" alt="Contact Person"> Html</div>
+                  <div class="chip"><img src="img/skillsLogo/css.jpg" alt="Contact Person"> Css</div>
+                  <div class="chip"><img src="img/skillsLogo/social.png" alt="Contact Person"> Social Api</div>
+                </div>
+                <br>
+                <br>
+                <h5>Intro</h5>
+                <p class="fi">Kushal Multidevelopers Pvt. Ltd. Erstwhile R M Enterprises has already taken a lead by developing and delivering over 2.5 million sq. feet in just two and a half years of its inception. This magnificent success is the outcome of the trust reposed by the customers in the honest and transparent working of the company and due to the timely delivery and delivering more than the commitment. The success and co-operation of the customers has made us humble and enthusiased us to serve more.</p>
+                <p class="fi">At Kushal Multidevelopers, we believe, that trust and respect is earned through actions and not through words. This belief has pushed us to strive harder and create higher benchmarks in delivery and service.</p>
+                <p class="fi">The Company commenced operations in FEB 2011 in India. Today, the company enjoys a strong presence on and around NH8 Highway and operations spanning all key segments of the Real estate Industry, namely the farmhouses, residential, and commercial. The company is the one of the fastest entities in the realty sector with a difference that offers luxury for reasonable costs, excellent customer care levels with highest customer satisfaction index and the highest imaginable standards for the welfare of its staff, society as well as for the environment.</p>
+                <p class="fi">The company has traversed a path of steady growth and expansion and has posted increasing turnover and profits year after year. The systems have been strengthened and new processes have been added.</p>
+                <p class="fi">The company is managed by highly qualified and ethically sound professionals who are fully engrossed to ensure that the company maintains its high standards in quality construction, timely delivery and customer Satisfaction. The Company has always strived hard to keep its commitments and thus enjoys an extremely resonant reputation in the Real Estate Industry.</p>
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/kushal/kushal1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Our Projects Page"><img class="containImg" src="img/projectsImg/kushal/kushal2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Why Us page"><img class="containImg" src="img/projectsImg/kushal/kushal3.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Gallery Page"><img class="containImg" src="img/projectsImg/kushal/kushal4.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="About Us Page"><img class="containImg" src="img/projectsImg/kushal/kushal5.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Our Projects Page"><img class="containImg" src="img/projectsImg/kushal/kushal6.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Inquiry form Page"><img class="containImg" src="img/projectsImg/kushal/kushal7.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contect Us Page"><img class="containImg" src="img/projectsImg/kushal/kushal8.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://kushalmultidevelopers.com" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- KushalUtility website --> 
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="containImg" src="img/projectsImg/KushalUtility/kushal1.png" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span># Kushal Utility Service</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># Kushal Utility Service</h4>
+                  <div class="chip"><img src="img/skillsLogo/html.png" alt="Contact Person"> Html</div>
+                  <div class="chip"><img src="img/skillsLogo/php.png" alt="Contact Person"> Php</div>
+                  <div class="chip"><img src="img/skillsLogo/js.png" alt="Contact Person"> Js</div>
+                  <div class="chip"><img src="img/skillsLogo/css.jpg" alt="Contact Person"> Css</div>
+                  <div class="chip"><img src="img/skillsLogo/social.png" alt="Contact Person"> Social Api</div>
+                </div>
+                <br>
+                <br>
+                <h5>Intro</h5>
+                <p class="fi">Motto is to provide superior class, professional and trustworthy service to our customers in a timely, and a very COST-EFFECTIVE manner. Kushal Utility Services is founded on a strong vision of being the best in the market to provide high quality solutions delivered with cost effective, quality controlled and timely support to our customers.</p>
+
+                <p class="fi">We strive to improve the traditional ways of handling your household issues. Our services have been tried and proven to reduce costs, increase efficiency and allow individuals to focus on their core competencies and more efficient and productive work.</p>
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Overview Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Facts Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal3.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Mission & Vision Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal4.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="About Founder Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal5.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Plan Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal6.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Plan Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal7.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Plan Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal8.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Plan Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal9.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Plan Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal10.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Why Us Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal11.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/KushalUtility/kushal12.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://kushalutilityservices.com" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- vivid  Consortium --> 
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="containImg" src="img/projectsImg/vividConsortium/vivid1.png" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span># Vivid Consortium</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># Vivid Consortium</h4>
+                  <div class="chip"><img src="img/skillsLogo/html.png" alt="Contact Person"> Html</div>
+                  <div class="chip"><img src="img/skillsLogo/js.png" alt="Contact Person"> Js</div>
+                  <div class="chip"><img src="img/skillsLogo/bootstrap.png" alt="Contact Person"> Bootstrap</div>
+                  <div class="chip"><img src="img/skillsLogo/css.jpg" alt="Contact Person"> Css</div>
+                </div>
+                <br>
+                <br>
+                <h5>Intro</h5>
+                <p class="fi">Vivid Consortium (CL &WP) Pvt. Ltd. was formed in the year 2013 in collaboration with M/s. EP Borneo Sdn Bhd (Malaysia). We selected talented and experienced team of Engineers who were trained in India and Singapore for technical aspects, planning of works and installation of right product suitable for as per the location of works.</p>
+
+                <p class="fi">At Vivid Consortium (CL &WP) Pvt. Ltd. Our vision is to provide proficient and reliable service to our customers nationwide and become one of the major players in eco-friendly waterproofing and cleaning industry by exercising the skills and expertise in which we are endowed.</p>
+
+                <p class="fi">Carrying out all cleaning and waterproofing activities in a eco-friendly and environmentally safe way and ensuring safety of our employees and the public at large.</p>
+
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="About Us Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Products Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid3.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Products Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid4.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Products Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid5.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Products Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid6.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Products Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid7.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Service Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid8.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Service Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid9.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Servie Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid10.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/vividConsortium/vivid11.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://www.vividconsortium.com" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 8L Health website --> 
+          <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img src="img/projectsImg/8lhealth/8lhealth1.png" alt="placeholder">
+              </a>
+              <div class="gallery-header">
+                <span># 8l Health</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h4># 8l Health</h4>
+                  <div class="chip"><img src="img/skillsLogo/bootstrap.png" alt="Contact Person"> Bootstrap</div>
+                  <div class="chip"><img src="img/skillsLogo/html.png" alt="Contact Person"> Html</div>
+                  <div class="chip"><img src="img/skillsLogo/php.png" alt="Contact Person"> Php</div>
+                  <div class="chip"><img src="img/skillsLogo/mysql.jpg" alt="Contact Person"> Mysql</div>
+                  <div class="chip"><img src="img/skillsLogo/js.png" alt="Contact Person"> Js</div>
+                </div>
+                <br>
+                <br>
+                <h5>Intro</h5>
+                <p class="fi">A global medical group that is dedicated to providing medical second opinions about cardiovascular health through Tele-Medicine.</p>
+                <p class="fi">We connect patients seeking expert consultation about preliminary diagnoses and treatment options with our American Board-certified cardiovascular professionals.</p>
+                <p class="fi">We use the latest telecommunications technology to conveniently and confidentially serve patients located across the global.</p>
+
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/8lhealth/8lhealth1.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Log In page"><img class="containImg" src="img/projectsImg/8lhealth/8lhealth2.png"></a>
+                    <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact us page"><img class="containImg" src="img/projectsImg/8lhealth/8lhealth3.png"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a href="http://dev8lhealth.herokuapp.com" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+              </div>
+            </div>
+          </div>
+
+           <!-- Acromed website --> 
+           <div class="d hx hf gu gallery-item gallery-expand ce website">
+              <div class="gallery-curve-wrapper">
+                <a class="gallery-cover gray">
+                  <img src="img/projectsImg/acromed/acromed1.png" alt="placeholder">
+                </a>
+                <div class="gallery-header">
+                  <span># Acromed</span>
+                </div>
+                <div class="gallery-body">
+                  <div class="title-wrapper">
+                    <h4># Acromed</h4>
+                    <div class="chip"><img src="img/skillsLogo/bootstrap.png" alt="Contact Person"> Bootstrap</div>
+                    <div class="chip"><img src="img/skillsLogo/html.png" alt="Contact Person"> Html</div>
+                    <div class="chip"><img src="img/skillsLogo/php.png" alt="Contact Person"> Php</div>
+                    <div class="chip"><img src="img/skillsLogo/mysql.jpg" alt="Contact Person"> Mysql</div>
+                    <div class="chip"><img src="img/skillsLogo/js.png" alt="Contact Person"> Js</div>
+                  </div>
+                  <br>
+                  <br>
+                  <h5>Intro</h5>
+                  <p class="fi">Acromed.in is a Bhopal`s first online one stop shop for medicine, pathology, doctor`s and surgical products. Acromed provides cash on delivery services at every corner of Bhopal, India. We offer same day medicine delivery. We have prescription medicines of all brands. Acromed`s online surgical shop has all type of surgical products in reasonable rates for all types of clinics and hospitals in Bhopal.</p>
+                  <p class="fi"><b><u>Acromed features:</u></b></p>
+                  <p class="fi">◉ Online Doctor Search</p>
+                  <p class="fi">◉ Pathology Lab Tests</p>
+                  <p class="fi">◉ Surgical Shop</p>
+                  <p class="fi">◉ Online Doctor Search</p>
+                  <p class="fi">Acromed.in team makes delivery online medicine simple as you think. We are working from last 10 years in same domain of Pharmaceutical, which was managed by dedicated team of young entrepreneur. We are the one who commit you for the customer service, time &amp; affordable rates for high quality medicine. We use the latest trends &amp; technology from which customer can easily reach us for better &amp; fast service, you can use our website, mobile app and whats app to connect with us and our services.            </p>
+  
+                  <div class="carousel-wrapper">
+                    <div class="t carousel">
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Home Page"><img class="containImg" src="img/projectsImg/acromed/acromed1.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Search & Buy Medicine Page"><img class="containImg" src="img/projectsImg/acromed/acromed2.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Book Doctors Appointment Page"><img class="containImg" src="img/projectsImg/acromed/acromed3.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Find and Book Page"><img class="containImg" src="img/projectsImg/acromed/acromed4.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Upload Prescription Page"><img class="containImg" src="img/projectsImg/acromed/acromed5.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Pathology Lab Page"><img class="containImg" src="img/projectsImg/acromed/acromed6.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Blog Page"><img class="containImg" src="img/projectsImg/acromed/acromed7.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="FAQs Page"><img class="containImg" src="img/projectsImg/acromed/acromed8.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Contact Us Page"><img class="containImg" src="img/projectsImg/acromed/acromed9.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Offers Page"><img class="containImg" src="img/projectsImg/acromed/acromed10.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Registration Page"><img class="containImg" src="img/projectsImg/acromed/acromed11.png"></a>
+                      <a class="carousel-item tooltipped" data-position="top" data-delay="50" data-tooltip="Login Page"><img class="containImg" src="img/projectsImg/acromed/acromed12.png"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="gallery-action">
+                  <a href="http://www.acromed.in" target="_blank" class="btn-floating btn-large waves-effect waves-light tooltipped" data-position="top" data-delay="50" data-tooltip="Visit Website"><i class="material-icons">open_in_new</i></a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="d hx hf gu gallery-item gallery-expand ce app">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="responsive-img" src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" alt="placeholder" >
+              </a>
+              <div class="gallery-header">
+                <span># Big Bang 1</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3># Big Bang 1</h3>
+                  <span class="gj">$23.99</span>
+                </div>
+                <p class="fi">
+Literally venmo before they sold out, DIY heirloom forage polaroid offal yr pop-up selfies health goth. Typewriter scenester hammock truffaut meditation, squid before they sold out polaroid portland tousled taxidermy vice. Listicle butcher thundercats, taxidermy pitchfork next level roof party crucifix narwhal kinfolk you probably haven't heard of them portland small batch.</p>
+                <p class="fi">
+Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. Drinking vinegar marfa you probably haven't heard of them consequat post-ironic, shabby chic williamsburg raclette vaporware readymade selfies brunch. Venmo selvage biodiesel marfa. Tbh literally 3 wolf moon, proident elit raclette chambray consequat edison bulb four loko accusamus. Semiotics godard eiusmod, ex esse air plant quinoa vaporware selfies keytar. Actually yuccie ennui flannel single-origin coffee, williamsburg cardigan banjo forage pug distillery tumblr hexagon vinyl occaecat.</p>
+
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                       <a class="carousel-item" href="#one!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#two!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#three!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#four!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#five!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+              </div>
+            </div>
+          </div>
+
+              <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="responsive-img" src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" alt="placeholder" >
+              </a>
+              <div class="gallery-header">
+                <span># Big Bang 1</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3># Big Bang 1</h3>
+                  <span class="gj">$23.99</span>
+                </div>
+                <p class="fi">
+Literally venmo before they sold out, DIY heirloom forage polaroid offal yr pop-up selfies health goth. Typewriter scenester hammock truffaut meditation, squid before they sold out polaroid portland tousled taxidermy vice. Listicle butcher thundercats, taxidermy pitchfork next level roof party crucifix narwhal kinfolk you probably haven't heard of them portland small batch.</p>
+                <p class="fi">
+Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. Drinking vinegar marfa you probably haven't heard of them consequat post-ironic, shabby chic williamsburg raclette vaporware readymade selfies brunch. Venmo selvage biodiesel marfa. Tbh literally 3 wolf moon, proident elit raclette chambray consequat edison bulb four loko accusamus. Semiotics godard eiusmod, ex esse air plant quinoa vaporware selfies keytar. Actually yuccie ennui flannel single-origin coffee, williamsburg cardigan banjo forage pug distillery tumblr hexagon vinyl occaecat.</p>
+
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                       <a class="carousel-item" href="#one!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#two!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#three!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#four!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#five!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+              </div>
+            </div>
+          </div>
+
+              <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="responsive-img" src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" alt="placeholder" >
+              </a>
+              <div class="gallery-header">
+                <span># Big Bang 1</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3># Big Bang 1</h3>
+                  <span class="gj">$23.99</span>
+                </div>
+                <p class="fi">
+Literally venmo before they sold out, DIY heirloom forage polaroid offal yr pop-up selfies health goth. Typewriter scenester hammock truffaut meditation, squid before they sold out polaroid portland tousled taxidermy vice. Listicle butcher thundercats, taxidermy pitchfork next level roof party crucifix narwhal kinfolk you probably haven't heard of them portland small batch.</p>
+                <p class="fi">
+Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. Drinking vinegar marfa you probably haven't heard of them consequat post-ironic, shabby chic williamsburg raclette vaporware readymade selfies brunch. Venmo selvage biodiesel marfa. Tbh literally 3 wolf moon, proident elit raclette chambray consequat edison bulb four loko accusamus. Semiotics godard eiusmod, ex esse air plant quinoa vaporware selfies keytar. Actually yuccie ennui flannel single-origin coffee, williamsburg cardigan banjo forage pug distillery tumblr hexagon vinyl occaecat.</p>
+
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                       <a class="carousel-item" href="#one!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#two!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#three!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#four!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#five!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+              </div>
+            </div>
+          </div>
+
+
+              <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="responsive-img" src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" alt="placeholder" >
+              </a>
+              <div class="gallery-header">
+                <span># Big Bang 1</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3># Big Bang 1</h3>
+                  <span class="gj">$23.99</span>
+                </div>
+                <p class="fi">
+Literally venmo before they sold out, DIY heirloom forage polaroid offal yr pop-up selfies health goth. Typewriter scenester hammock truffaut meditation, squid before they sold out polaroid portland tousled taxidermy vice. Listicle butcher thundercats, taxidermy pitchfork next level roof party crucifix narwhal kinfolk you probably haven't heard of them portland small batch.</p>
+                <p class="fi">
+Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. Drinking vinegar marfa you probably haven't heard of them consequat post-ironic, shabby chic williamsburg raclette vaporware readymade selfies brunch. Venmo selvage biodiesel marfa. Tbh literally 3 wolf moon, proident elit raclette chambray consequat edison bulb four loko accusamus. Semiotics godard eiusmod, ex esse air plant quinoa vaporware selfies keytar. Actually yuccie ennui flannel single-origin coffee, williamsburg cardigan banjo forage pug distillery tumblr hexagon vinyl occaecat.</p>
+
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                       <a class="carousel-item" href="#one!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#two!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#three!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#four!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#five!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+              </div>
+            </div>
+          </div>
+
+
+              <div class="d hx hf gu gallery-item gallery-expand ce website">
+            <div class="gallery-curve-wrapper">
+              <a class="gallery-cover gray">
+                <img class="responsive-img" src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" alt="placeholder" >
+              </a>
+              <div class="gallery-header">
+                <span># Big Bang 1</span>
+              </div>
+              <div class="gallery-body">
+                <div class="title-wrapper">
+                  <h3># Big Bang 1</h3>
+                  <span class="gj">$23.99</span>
+                </div>
+                <p class="fi">
+Literally venmo before they sold out, DIY heirloom forage polaroid offal yr pop-up selfies health goth. Typewriter scenester hammock truffaut meditation, squid before they sold out polaroid portland tousled taxidermy vice. Listicle butcher thundercats, taxidermy pitchfork next level roof party crucifix narwhal kinfolk you probably haven't heard of them portland small batch.</p>
+                <p class="fi">
+Ea salvia adipisicing vegan man bun. Flexitarian cupidatat skateboard flannel. Drinking vinegar marfa you probably haven't heard of them consequat post-ironic, shabby chic williamsburg raclette vaporware readymade selfies brunch. Venmo selvage biodiesel marfa. Tbh literally 3 wolf moon, proident elit raclette chambray consequat edison bulb four loko accusamus. Semiotics godard eiusmod, ex esse air plant quinoa vaporware selfies keytar. Actually yuccie ennui flannel single-origin coffee, williamsburg cardigan banjo forage pug distillery tumblr hexagon vinyl occaecat.</p>
+
+                <div class="carousel-wrapper">
+                  <div class="t carousel">
+                       <a class="carousel-item" href="#one!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#two!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#three!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#four!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                    <a class="carousel-item" href="#five!"><img src="https://s3-eu-central-1.amazonaws.com/centaur-wp/creativereview/prod/content/uploads/2015/10/Carl-Kleiner-GOOGLE-Papercscape-2.jpg" ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery-action">
+                <a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">favorite</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+
+  <footer class="page-footer" style="padding-top: 0px; position: relative; bottom: -80px;">
+    <div class="footer-copyright">
+      <div class="container">
+      <b>© 2018 COPYRIGHT</b>
+      <a class="grey-text text-lighten-4 right" href="#!"><div class="made-with-love">Made with <i>♥</i> by Vishal Singh</div></a>
+      </div>
+    </div>
+  </footer>
+  </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="js/pagePreloader.js"></script>
+  <script src="http://luis-almeida.github.io/unveil/jquery.unveil.js"></script>
+  <script>
+    $(function() {
+        $(".containImg").unveil(300);
+    });
+  </script>
+  <link rel="stylesheet" href="css/defalutProfiePic.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/topIntro.css">
+  <link rel="stylesheet" type="text/css" href="css/timeline.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/neon.css"> -->
+
+  <script src='https://use.fontawesome.com/62ad67e303.js'></script>
+  <script  src="js/topNight.js"></script>
+
+  <!-- Core Javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+  <script src="js/profilePic.js"></script>
+  <script src="js/defaultProfilepic.js"></script>
+  <script src="js/index.js"></script>
+  <script type="text/javascript" src="js/particaleffects.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/gallery.min.js"></script>
+  <a href="javascript:void(0);" id="rocketmeluncur" class="showrocket" ><i></i></a>
+ </body>
 </html>
+<script>
+
+//disable the horizontal scroll
+var offset = window.pageXOffset;
+$(window).scroll(function () {
+  if(offset != window.pageXOffset)
+  window.scrollTo(0, window.pageYOffset);
+});
+
+//Auto scroll on document on load
+$(document).ready(function(){
+  $('html, body').animate({scrollTop: 25},'0');
+});
+
+//Rocket auto scroll btn
+jQuery(window).scroll(function(){
+if(jQuery(window).scrollTop()<50){
+  jQuery('#rocketmeluncur').slideUp(500);
+}else{
+  jQuery('#rocketmeluncur').slideDown(500);
+}
+var ftrocketmeluncur = jQuery("#ft")[0] ? jQuery("#ft")[0] : jQuery(document.body)[0];
+var scrolltoprocketmeluncur = $('rocketmeluncur');
+var viewPortHeightrocketmeluncur = parseInt(document.documentElement.clientHeight);
+var scrollHeightrocketmeluncur = parseInt(document.body.getBoundingClientRect().top);
+var basewrocketmeluncur = parseInt(ftrocketmeluncur.clientWidth);
+var swrocketmeluncur = scrolltoprocketmeluncur.clientWidth;
+if (basewrocketmeluncur < 1000) {
+var leftrocketmeluncur = parseInt(fetchOffset(ftrocketmeluncur)['left']);
+leftrocketmeluncur = leftrocketmeluncur < swrocketmeluncur ? leftrocketmeluncur * 2 - swrocketmeluncur : leftrocketmeluncur;
+scrolltoprocketmeluncur.style.left = ( basewrocketmeluncur + leftrocketmeluncur ) + 'px';
+} else {
+//scrolltoprocketmeluncur.style.left = 'auto';
+//scrolltoprocketmeluncur.style.right = '10px';
+}
+})
+
+jQuery('#rocketmeluncur').click(function(){
+    jQuery("html, body").animate({ scrollTop: '0px',display:'none'},{
+            duration: 600,  
+            easing: 'linear'
+        });
+    
+    var self = this;
+    this.className += ' '+"launchrocket";
+    setTimeout(function(){
+      self.className = 'showrocket';
+    },800)
+});
+</script>
